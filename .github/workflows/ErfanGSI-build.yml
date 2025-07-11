@@ -7,7 +7,7 @@ on:
         description: 'Direct link/直链'
         required: true
         default: 'https://mirrorbits.lineageos.org/full/sagit/20230302/lineage-20.0-20230302-nightly-sagit-signed.zip'
-      REPACK_NAME:
+      REPACK_NAME: 'system.img'
         description: 'Compressed name/打包名称'
         required: true
         default: 'Compressed.7z'
