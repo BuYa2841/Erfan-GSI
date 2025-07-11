@@ -65,7 +65,7 @@ jobs:
 
       - name: Fix setup.sh pip -> pip3
         run: |
-        sed -i 's/\bpip\b/pip3/g' $GITHUB_WORKSPACE/ErfanGSIs/setup.sh
+          sed -i 's/\bpip\b/pip3/g' $GITHUB_WORKSPACE/ErfanGSIs/setup.sh
 
       - name: 更换 777 权限
         run: |
