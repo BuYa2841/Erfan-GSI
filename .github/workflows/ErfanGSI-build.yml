@@ -75,6 +75,7 @@ jobs:
       - name: 建立并配置 ErfanGSI 工具所需环境
         run: |
           sudo sed -i 's/USE_MIRROR_FOR_PIP\=true/USE_MIRROR_FOR_PIP\=false/' $GITHUB_WORKSPACE/ErfanGSIs/setup.sh
+          sudo ln -s $(which pip3) /usr/bin/pip || true
           sudo bash $GITHUB_WORKSPACE/ErfanGSIs/setup.sh
           sudo apt-get -y --purge remove "adoptopenjdk-11-hotspot"
           java -version
