@@ -6,7 +6,7 @@ on:
       ROM_URL:
         description: 'Direct link/直链'
         required: true
-        default: 'https://www.dropbox.com/scl/fi/uiy19os7pdsa7guuom4v4/Nothing.img?rlkey=gmik1t6e4mouck09vukxfwvvy&st=u4fewkr0&dl=1'
+        default: 'https://www.dropbox.com/scl/fi/3c0c6yc3mw4bhyc8p1b47/Nothing.7z?rlkey=59aippzub2c08sp3nt8hd8vdd&st=dkrelby4&dl=1'
       REPACK_NAME:
         description: 'Compressed name/打包名称'
         required: true
