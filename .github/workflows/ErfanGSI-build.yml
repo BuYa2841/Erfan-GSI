@@ -57,15 +57,15 @@ jobs:
           sudo ln -s $(which pip3) /usr/bin/pip || true
           sudo apt install -y git wget gzip unzip curl axel aria2 zstd rename p7zip-full pigz
 
-      - name: Fix setup.sh pip -> pip3
-        run: |
-          sed -i 's/\bpip\b/pip3/g' $GITHUB_WORKSPACE/ErfanGSIs/setup.sh
-
       - name: 获取 ErfanGSI 工具
         uses: actions/checkout@main
         with:
           repository: tosasitill/erfanSGSI
           path: ErfanGSIs
+
+      - name: Fix setup.sh pip -> pip3
+        run: |
+        sed -i 's/\bpip\b/pip3/g' $GITHUB_WORKSPACE/ErfanGSIs/setup.sh
 
       - name: 更换 777 权限
         run: |
