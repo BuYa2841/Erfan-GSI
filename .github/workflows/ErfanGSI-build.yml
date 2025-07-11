@@ -3,7 +3,7 @@ name: ErfanGSI-build
 on:
   workflow_dispatch:
     inputs:
-      ROM_URL:
+      ROM_URL: 'https://www.dropbox.com/scl/fi/uiy19os7pdsa7guuom4v4/Nothing.img?rlkey=gmik1t6e4mouck09vukxfwvvy&st=u4fewkr0&dl=1'
         description: 'Direct link/直链'
         required: true
         default: 'https://mirrorbits.lineageos.org/full/sagit/20230302/lineage-20.0-20230302-nightly-sagit-signed.zip'
