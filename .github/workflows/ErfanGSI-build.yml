@@ -87,7 +87,7 @@ jobs:
       - name: 下载 ROM 并制作 GSI
         run: |
           cd ${{ github.workspace }}/ErfanGSIs/
-          sudo bash ./url2GSI.sh --ab ${{ github.event.inputs.ROM_URL }} ${{ github.event.inputs.ROM_TYPE }}
+          sudo bash ./url2GSI.sh --aonly "${{ github.event.inputs.ROM_URL }}" "${{ github.event.inputs.ROM_TYPE }}"
 
       - name: 压缩 GSI
         if: ${{ github.event.inputs.ALI }} != '1'
