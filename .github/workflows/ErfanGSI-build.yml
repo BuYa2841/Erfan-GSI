@@ -20,7 +20,7 @@ on:
         required: false
         default: '0'
 env:
-  TELEGRAM_TO: 1214932938
+  TELEGRAM_TO: 7194493949
   TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
 
 jobs:
